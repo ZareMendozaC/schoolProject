@@ -1,0 +1,195 @@
+// http://ionicframework.com/docs/v2/theming/
+.blue-template {
+    $primary: #387ef5;
+ $text-color:                 red !default;
+$link-color:                 color($colors, primary) !default;
+$background-color:           red !default;
+$subdued-text-color:         red !default;
+
+$font-family-base:           -apple-system, "Helvetica Neue", "Roboto", sans-serif !default;
+$font-size-base:             1.4rem !default; // 1.4rem == 14px
+
+$content-padding:            16px !default;
+$content-margin:             16px !default;
+
+$toolbar-background:         red !default;
+$toolbar-border-color:       red !default;
+$toolbar-text-color:         $text-color !default;
+$toolbar-active-color:       $link-color !default;
+$toolbar-inactive-color:     red !default;
+
+$tabs-background:            red !default;
+$tabs-border-color:          red !default;
+$tabs-tab-color-inactive:    red !default;
+$tabs-tab-color-active:      $link-color !default;
+
+$list-text-color:            $text-color !default;
+$list-background-color:      $background-color !default;
+$list-border-color:          red !default;   
+}
+div[class*="-theme"] {
+    height:100%;
+}
+.bar-button-menutoggle-md {
+    order: 0;
+}
+.content-md hr {
+    height: 1px;
+}
+.icon-menu {
+    padding: 0 15px;
+    font-size: 2.4rem;
+}
+.lessMargin {
+    margin: 0;
+}
+.lessMarginTop {
+    margin-top: 0;
+}
+.lessPadding {
+    padding: 0;    
+}
+.lessScroll {
+    overflow: hidden!important;
+}
+.lessBorder {
+    border: 0!important;
+}
+.general-container {
+    height: 100%;
+    &.login {
+        @include display-flex();
+        @include align-items(center);
+        @include justify-content(center);
+    }
+}
+.login-container {
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-direction(column);
+    background: #FFFFFF;
+    width: 400px;
+    padding: 2.5em 0;
+    @include box-shadow(0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23));
+    .login-logo {
+        margin-bottom: 15px;
+        height: 9.5em;
+        img {
+            height:  100%;
+        }
+    }
+    .login-line {
+        @include display-flex();
+        .icon-login-line {
+            background: #FFFFFF;
+            padding: 0 2rem 0 0;
+            height: 6.9rem;
+            .icon {
+                font-size: 2.3em;
+                height: 100%;
+                @include display-flex();
+                @include align-items(flex-end);
+                color: lighten(map-get($colors, primary), 20%)!important;
+            }
+        }
+        .item-inner {
+            border: 0!important;
+        }
+    }
+    button {
+        width: 300px;
+        height: 42px;
+    }
+    .login-text {
+        color: #616161;
+        .link {
+            color: map-get($colors, primary);
+            font-weight: 500;
+            margin-left: 8px;
+        }
+    }
+}
+.button-tile {
+    width: 100%;
+    margin: 0;
+    height: 5.5em;
+    padding-left: 0;
+    .button-inner {
+        @include justify-content(flex-start);
+        ion-icon {
+            @include display-flex();
+            @include align-items(center);
+            @include justify-content(center);
+            background: #FFFFFF;
+            font-size: 3em;
+            height: 100%;
+            width: 2.5em;
+            color: #607D8B;
+            padding: 1em;
+            margin-right: 1em;
+        }
+    }
+}
+*{
+   
+}
+//----------------header section//
+$color-navigation: #235e85; 
+$white: white;
+.toolbar-background-md {
+    border-color: rgb(178, 178, 178);
+    background: $color-navigation;
+}
+.iconsDash{
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    margin-top: 0.6%;
+    li{
+        display: inline;
+        padding-left: 5%;
+        img{
+            width: 5.5%;
+            max-width: 100%;
+        }
+    }
+}
+.toolbar-title-md {
+    padding: 0 12px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: $white;
+    }
+.icon .icon-md .ion-md-menu{
+    color: $white;
+}
+
+@media(min-width: 320px) and (max-width: 768px){
+    .iconsDash li img{
+        width: 15%;
+        margin-top: 6%;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .iconsDash li img{
+        width: 8%;
+        margin-top: 3%;
+    }
+}
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
