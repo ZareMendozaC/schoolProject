@@ -1,23 +1,114 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Page Two</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+<!----------- List --------->
+<ion-content padding class="content-ios outer-content container listado">
+    <ion-grid>
+        <ion-row responsive-sm>
+            <ion-col class="col" width-100>
+                              <ion-card-content>
+                                     <h2>PR - 20173461</h2>
+                                  <p><strong>Description:</strong> CHROME (SIDE BY SIDE) TOILET PAPER DISPENSER (" EACH MIN.)</p>
+                                     <p><strong>Request Date:</strong></p>
+                                </ion-card-content>
+                                <ion-row responsive-sm>
+                    
+                                         <ion-col class="col" col-md-3 col-sm-8>
+                                            <p class="p"><i>*</i>Descripción:</p>
+                                         </ion-col>
+                                         <ion-col class="col" col-md-3>
+                                            <input type="text" placeholder="111">
+                                         </ion-col>
+                                </ion-row>
+                                <ion-row responsive-sm>
+                    
+                                         <ion-col class="col" col-md-3 col-sm-8>
+                                            <p class="p">Request Date:</p>
+                                         </ion-col>
+                                         <ion-col class="col" col-md-3>
+                                          <button type="text"class="boton"><img class="calendario" src="../images/login/calendar.png"/></button>
+                                         </ion-col>
+                                </ion-row>
+                                <ion-row responsive-sm>
+                    
+                                         <ion-col class="col" col-md-3>
+                                            <p class="p">Fiscal Year:</p>
+                                         </ion-col>
+                                         <ion-col class="col" col-md-2>
+                                             <div class="item item-input item-select input">
+                                                    <select>
+                                                     <option>2016</option>
+                                                     <option selected>2017</option>
+                                                     <option>2018</option>        </select>
+                                              </div>
+                                         </ion-col>
+                                </ion-row>
+                                <ion-row responsive-sm>
+                    
+                                         <ion-col class="col" col-md-3>
+                                            <p class="p">Buyer:</p>
+                                         </ion-col>
+                                         <ion-col class="col" col-md-3>
+                                            <input type="text" placeholder="TCOLLINS">
+                                         </ion-col>
+                                         <ion-col class="col" col-md-2>
+                                            <button class="selec"><img class="lapiz" src="../images/login/pencil.png"/>Select</button>
+                                         </ion-col>
+                                </ion-row>
+                                  <ion-row responsive-sm>
+                    
+                                         <ion-col class="col" col-md-3>
+                                            <p class="p">Buyer Name:</p>
+                                         </ion-col>
+                                         <ion-col class="col" col-md-3>
+                                            <input type="text" placeholder="Torn Collins">
+                                         </ion-col>
+                                </ion-row>
+                                <ion-row responsive-sm>
+                    
+                                         <ion-col class="col" col-md-3>
+                                            <p class="p"><i>*</i>Requested For Code:</p>
+                                         </ion-col>
+                                         <ion-col class="col" col-md-3>
+                                            <input type="text" placeholder="SSHERONY">
+                                         </ion-col>
+                                          <ion-col class="col" col-md-2>
+                                            <button class="selec"><img class="lapiz" src="../images/login/pencil.png"/>Select</button>
+                                         </ion-col>
+                                </ion-row>
+                                <ion-row responsive-sm>
+                    
+                                         <ion-col class="col" col-md-3>
+                                            <p class="p">Receipt Option:</p>
+                                         </ion-col>
+                                         <ion-col class="col" col-md-2>
+                                            <div class="item item-input item-select input1">
+                                                    <select>
+                                                     <option>End User Receipt</option>
+                                                     <option selected>End User Receipt</option>
+                                                     <option>2</option>        </select>
+                                              </div>
+                                         </ion-col>
+                                </ion-row>
+                                <ion-row responsive-sm>
+                    
+                                         <ion-col class="col" col-md-3>
+                                            <p class="p">Requested For Name:</p>
+                                         </ion-col>
+                                         <ion-col class="col" col-md-3>
+                                            <input type="text" placeholder="Shelley Sherony">
+                                         </ion-col>
+                                </ion-row>
+                                <ion-row responsive-sm>
+                    
+                                         <ion-col class="col" col-md-3>
+                                            <p class="p">Currency:</p>
+                                         </ion-col>
+                                         <ion-col class="col" col-md-3>
+                                            <input type="text" placeholder="USD">
+                                         </ion-col>
+                                         <ion-col class="col" col-md-2>
+                                            <button class="selec"><img class="lapiz" src="../images/login/pencil.png"/>Select</button>
+                                         </ion-col>
+                                </ion-row>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
