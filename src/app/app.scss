@@ -327,6 +327,50 @@ $white: white;
 /*------ End Checkout ------*/
 /*---------------- END CINTHIA MASHIEL ----------------*/
 
+/*----------------------------- GIO --------------------*/
+@mixin separador{
+   th{
+       padding: 10px 20px;
+       
+   }
+   td{
+       padding: 10px 20px;
+       border-top: 2px solid #f3f3f3 ;
+       border-bottom: 2px solid #f3f3f3 ;
+   }
+}
+.content-ios{
+   background-color: #f3f3f3;
+}
+.topic-list{
+   @include separador;
+   margin: 0 10px 0 10px;
+   background-color: #fff;
+   
+   
+   .title{
+       color: #515151;
+   }
+   .category, .category_text, .unit, .cost{
+       color: #0091c2;
+   } 
+   .num{
+       color: #9a9b9e;
+   }
+   a{
+       text-decoration: none;
+       color: black;
+   }
+   input{
+       font-size: x-small;
+   }
+   .trash{
+       color: #ff5e66;
+       font-size: 30px;
+       margin-left: 10px;
+   }
+}
+
 
 // App Global Sass
 // --------------------------------------------------
