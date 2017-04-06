@@ -178,7 +178,135 @@ $white: white;
         margin-top: 3%;
     }
 }
+// Estilos para el login
 
+.container{
+    text-align: center;
+    .letra{
+        text-align: center;
+        color:cornflowerblue;
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+    button{
+        padding: 0px 60px;
+    }
+    .imagen{
+        width: 110px;
+        height: 110px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color:#47b2e4;
+        padding: 30px;
+        position: absolute;
+        top: -80px;
+        left: 120px;   
+    }
+    .text-input-md {
+    text-align: center;
+     }
+    .text-input-ios {
+    text-align: center;
+    }
+    .item-md {
+    text-align: left;
+     }
+    .imagen1{
+        width: 15px;
+        height: 15px;
+        padding-right: 2px;
+    }
+    ion-card{
+       overflow: visible;
+    }
+    .card-md1 {
+	position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-40%, -40%);
+    -webkit-transform: translate(-53%, -40%);
+    margin-top: 300px;
+    padding-top: 70px;
+    width: 350px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
+    .button{
+        margin: 0 auto;
+    }
+}
+// shopping
+.ShoppingCon{
+    .pantalla{
+        width: 160px;
+        margin: 0 auto;
+        padding: 70px 0px 18px 0px;
+    }
+    .card-imgs{
+        background-color: #009384;
+        width: 75px;
+        padding: 15px;
+        color: white;
+        float: right;
+    }
+    .buton{
+        background-color: #0069ba;
+    }
+    h2{
+        color: #005e8a;
+    }
+    p{
+        font-size: 18px;
+    }
+    
+    .card-md1 {
+    margin: 10px 10px 0px 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #f9f9f9;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+   }
+    #form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+   }
+
+   #form p {
+   text-align: center;
+   }
+   #form label {
+   font-size: 20px;
+   }
+   input[type="radio"] {
+   display: none;
+   }
+   label {
+   color: grey;
+   }
+
+  .clasificacion {
+   direction: rtl;
+   unicode-bidi: bidi-override;
+   }
+   label:hover,
+   label:hover ~ label {
+   color: orange;
+   }
+    .letra{
+        font-size: 13px;
+        position: absolute;
+        top: 16px;
+        left: 30px;
+    }
+    .letra1{
+        position: absolute;
+        top: 16px;
+    }
+}
 
 // App Global Sass
 // --------------------------------------------------
