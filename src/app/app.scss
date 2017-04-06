@@ -182,7 +182,7 @@ $white: white;
 
 // App Global Sass
 // --------------------------------------------------
-/**{outline: solid red 1px;}*/
+
 
 /*------------------------CALENDAR*/
 .content-ios{
@@ -261,76 +261,52 @@ $white: white;
         }
     }
 
-/*-----------------Shopping Cart*/
-@mixin color_gris{
-    color:  #bfc0c2;
-}
-@mixin color_azul_text{
-    color: #0078d4;
-}
-@mixin box-white_1{
-    background-color: #fff;
-    padding-bottom: 20%;
+/*----------------Shopping Cart*/
+
+
+@mixin separador{
+    th{
+        padding: 10px 20px;
+        
+    }
+    td{
+        padding: 10px 20px;
+        border-top: 2px solid #f3f3f3 ;
+        border-bottom: 2px solid #f3f3f3 ;
+    }
 }
 .content-ios{
-    @include color_gris;
+    background-color: #f3f3f3;
 }
-
-.encuadre_2{
-    @include box-white_1;
+.topic-list{
+    @include separador;
+    margin: 0 10px 0 10px;
     background-color: #fff;
-    margin:100px 15px 0 15px;;
-    margin-left: 15px
-}
-
-.linea{
-    width: 100%;
-    height: 2px;
-    color: #bfc0c2;
-}
-
-
-.pri_filas{
-    border: solid 1px #bfc0c2;
-    padding-bottom: 4%;
     
-    .uno{
-        color: #505050;
-        font-size: 18px;
-    }
-    .dos{
-        color: #0078d4;
-    }
-    .tres{
-        @include color_gris;
-    }
-    .cuatro{
-        @include color_azul_text;
-    }
-}
-
-.filas{
     
-    padding-bottom: 12%;
-    height: auto;
-    
+    .title{
+        color: #515151;
+    }
+    .category, .category_text, .unit, .cost{
+        color: #0091c2;
+    } 
+    .num{
+        color: #9a9b9e;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
     input{
-        font-size: 3%; 
+        font-size: x-small;
     }
-    .dos{
-        @include color_azul_text;
-    }
-    p{
-        color: #505050;
+    .trash{
+        color: #ff5e66;
+        font-size: 30px;
+        margin-left: 10px;
     }
 }
 
-@media screen and (max-width: 768px){
-        .general{
-            
-            
-        }
-    }
 
 
 
