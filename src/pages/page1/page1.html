@@ -227,4 +227,47 @@
         </ion-row>
     </ion-grid>
 </ion-content>
+<!----------- LOGIN --------->
+<ion-content padding class="content-ios outer-content container">
+    <ion-grid>
+        <ion-row responsive-sm>
+            <ion-col class="col" width-100>
+               <!--- Lisbeth --->
+                            <ion-card class="card card-md1 ">
+                               <img class="imagen" src="../images/login/user.png">
+                                <ion-card-content class="lista">
+                                <h2 class="letra">Wellcome</h2>
+                                <ion-list>
+                                     <ion-item style="border:1px solid #97adb7;">
+                                         <ion-input type="text" placeholder="User Name" ></ion-input>
+                                     </ion-item>
+                                     <br>
+                                     <ion-item style="border:1px solid #97adb7;">
+                                         <ion-input type="password" placeholder="Password"></ion-input>
+                                     </ion-item>
+                                </ion-list>
+                                <ion-row responsive-sm>
+                                     <ion-col class="col" width-50>
+                                         <ion-item>
+                                             <ion-label style="color:#8d8a8a; font-size:12px;">Remenber me</ion-label>
+                                             <ion-checkbox [(ngModel)]="mushrooms"></ion-checkbox>
+                                         </ion-item>
+                                     </ion-col>
+                                     <ion-col class="col" width-50>
+                                          <ion-item class="item-ios1">
+                                                 <img style="display: inline-block; " class="imagen1" src="../images/login/mail.png">
+                                                 <p style="font-size:12px; display: inline-block; ">Forgot Password?</p>
+                                          </ion-item>
+                                     </ion-col>
+                                     <ion-col class="col button" col-md-9>
+                                         <button ion-button full color="default">LOGIN</button>
+                                     </ion-col>
+                                </ion-row>
+                                </ion-card-content>
+                            </ion-card>
+               <!--- End Lisbeth --->
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
 </div>
