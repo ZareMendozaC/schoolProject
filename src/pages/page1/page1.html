@@ -215,40 +215,74 @@
     </ion-grid>
 </ion-content>
 
-<ion-content padding class="content-ios outer-content hidden-hide-when">
-    <ion-grid>
-        <ion-row responsive-sm>
-            <ion-col class="col" width-50>
-                <ion-item>
-                  <ion-icon name="ios-arrow-dropdown" item-left></ion-icon>
-                  General Information
-                </ion-item>  
-                <ion-item class="lessBorder"><div class="item-inner lessBorder">
-                    <ion-icon name="medical" item-left></ion-icon>
-                    
-                    </div></ion-item>
-            </ion-col>
-            <ion-col class="col" width-50>
-                <ion-item>
-                  <ion-icon name="ios-arrow-dropdown" item-left></ion-icon>
-                  Shipping Information
-                </ion-item>      
-            </ion-col>
-        </ion-row>
-    </ion-grid>
+<ion-content padding class="content-ios nuevo">
+   <table class="topic-list ember-view">
+     <thead>
+         <tr class="header">
+             <th class="title"></th>
+             <th class="title">ITEM CODE</th>
+             <th class="category">CATALOG</th>
+             <th class="num">CATEGORY</th>
+             <th class="num">QUANTITY@PRICE</th>
+             <th class="num">EXTENDED COST</th>
+             <th class="status">LINE STATUS</th>
+         </tr>
+     </thead>
+         <tr class="topic-list-item category-ionic ember-view">
+             <td class="numeracion"><span>1</span></td>
+             <td class="codigo"><span>SCO1950</span></td>
+             <td class="city">NATIONALCLEAN</td>
+             <td class="category">48500</td>
+             <td class="quantity">1.00 @ 42.50 USD Each</td>
+             <td class="cost">42.50 USD</td>
+             <td class="cost">Incomplete</td>
+         </tr>
+     <tbody>
+             <td class=""><span></span></td>
+             <td class="description">
+                <span>Scott fold Paper Hand Towels(20 packs per box) <br>
+                <strong>Acount:</strong><br>
+                3000-A65009 42.50 USD<br>
+                <strong>Description:</strong><br>
+                SVP GOVT & CONOPS-JANITORIAL SERVICES-SUPPLIES <br>
+                </span>
+             </td>
+     </tbody>
+         <tr class="topic-list-item category-ionic ember-view text">
+             <td class="numeracion"><span>2</span></td>
+             <td class="codigo"><span>SCO1950</span></td>
+             <td class="city">NATIONALCLEAN</td>
+             <td class="category">48500</td>
+             <td class="quantity">1.00 @ 42.50 USD Each</td>
+             <td class="cost">42.50 USD</td>
+             <td class="cost">Incomplete</td>
+         </tr>
+     <tbody>
+             <td class=""><span></span></td>
+             <td class="description">
+                <span>Scott fold Paper Hand Towels(20 packs per box) <br>
+                <strong>Acount:</strong><br>
+                3000-A65009 42.50 USD<br>
+                <strong>Description:</strong><br>
+                SVP GOVT & CONOPS-JANITORIAL SERVICES-SUPPLIES <br>
+                </span>
+             </td>
+     </tbody>
+     
+  </table> 
 </ion-content>
 
-<ion-content padding class="content-ios general">
+<ion-content padding class="content-ios general hidden-hide-when">
 <ion-card>
- <table class="topic-list ember-view">
+ <table class="topic-list ember-view" >
      <thead>
          <tr>
              <th class="title">Shopping Cart</th>
              <th class="category">Items in your Cart-4 items(s)</th>
-             <th class="num">Unit Cost</th>
-             <th class="num">Quantity</th>
-             <th class="num">Extended Cost</th>
-             <th class="num remove">Remove Item</th>
+             <th class="num1">Unit Cost</th>
+             <th class="num2">Quantity</th>
+             <th class="num3">Extended Cost</th>
+             <th class="num4 remove">Remove Item</th>
          </tr>
      </thead>
      
@@ -262,54 +296,14 @@
              <td class="trash"><strong><ion-icon name="ios-trash-outline"></ion-icon></strong></td>
          </tr>
      </tbody>
-     
-     <tbody>
-         <tr class="topic-list-item category-ionic ember-view">
-             <td><span class="link-top-inline"><img style="width:120px" src="../images/dashboard/tv.png" alt=""></span></td>
-             <td><span class="category_text">Xerox(R) Premium Digital Carbonless Copy Paper,3 Parts,20.8 Lb, 8 1/2x11, Straight collection, Multicolor , Box ofc16 3 Set Forms (Yield 5,010 Sheets)</span><br><br><a href="" class="buy">Get it by today</a></td>
-             <td class="unit">$1.00</td>
-             <td class="views"><input type="number"></td>
-             <td class="cost">$1.00</td>
-             <td class="trash"><strong><ion-icon name="ios-trash-outline"></ion-icon></strong></td>
-         </tr>
-     </tbody>
-     <tbody>
-         <tr class="topic-list-item category-ionic ember-view">
-             <td><span class="link-top-inline"><img style="width:120px" src="../images/dashboard/tv.png" alt=""></span></td>
-             <td><span class="category_text">Xerox(R) Premium Digital Carbonless Copy Paper,3 Parts,20.8 Lb, 8 1/2x11, Straight collection, Multicolor , Box ofc16 3 Set Forms (Yield 5,010 Sheets)</span><br><br><a href="" class="buy">Get it by today</a></td>
-             <td class="unit">$1.00</td>
-             <td class="views"><input type="number"></td>
-             <td class="cost">$1.00</td>
-             <td class="trash"><strong><ion-icon name="ios-trash-outline"></ion-icon></strong></td>
-         </tr>
-     </tbody>
-     <tbody>
-         <tr class="topic-list-item category-ionic ember-view">
-             <td><span class="link-top-inline"><img style="width:120px" src="../images/dashboard/tv.png" alt=""></span></td>
-             <td><span class="category_text">Xerox(R) Premium Digital Carbonless Copy Paper,3 Parts,20.8 Lb, 8 1/2x11, Straight collection, Multicolor , Box ofc16 3 Set Forms (Yield 5,010 Sheets)</span><br><br><a href="" class="buy">Get it by today</a></td>
-             <td class="unit">$1.00</td>
-             <td class="views"><input type="number"></td>
-             <td class="cost">$1.00</td>
-             <td class="trash"><strong><ion-icon name="ios-trash-outline"></ion-icon></strong></td>
-         </tr>
-     </tbody>
-     <tbody>
-         <tr class="topic-list-item category-ionic ember-view">
-             <td><span class="link-top-inline"><img style="width:120px" src="../images/dashboard/tv.png" alt=""></span></td>
-             <td><span class="category_text">Xerox(R) Premium Digital Carbonless Copy Paper,3 Parts,20.8 Lb, 8 1/2x11, Straight collection, Multicolor , Box ofc16 3 Set Forms (Yield 5,010 Sheets)</span><br><br><a href="" class="buy">Get it by today</a></td>
-             <td class="unit">$1.00</td>
-             <td class="views"><input type="number"></td>
-             <td class="cost">$1.00</td>
-             <td class="trash"><strong><ion-icon name="ios-trash-outline"></ion-icon></strong></td>
-         </tr>
-     </tbody>
+    
  </table>
-</ion-card>     
-        
+</ion-card> 
 </ion-content>
 </div>
 
-
+    
+<ion-scroll>
 
 
 

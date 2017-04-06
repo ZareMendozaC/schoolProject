@@ -184,7 +184,7 @@ $white: white;
 // --------------------------------------------------
 
 
-/*------------------------CALENDAR*/
+/*------------------------CALENDAR
 .content-ios{
     .number{
         font-size: 120px;
@@ -259,8 +259,7 @@ $white: white;
                 }
             }
         }
-    }
-
+    }*/
 /*----------------Shopping Cart*/
 
 
@@ -290,7 +289,7 @@ $white: white;
     .category, .category_text, .unit, .cost{
         color: #0091c2;
     } 
-    .num{
+    .num1, .num2, .num3, .num4 {
         color: #9a9b9e;
     }
     a{
@@ -304,6 +303,60 @@ $white: white;
         color: #ff5e66;
         font-size: 30px;
         margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+        .content-ios{
+            th .unit, .cost{
+                display: none;
+            }
+            td .unit, .cost{
+                display: none;
+            }
+            .num2{
+                width: 100%;
+            }
+            
+            
+        }
+    }
+
+
+/*---------------ZARELA*/
+
+
+@mixin separador{
+    th{
+        padding: 10px 20px;
+    }
+    td{
+        padding: 10px 20px;
+    }
+}
+
+.content-ios{
+    background-color: #fff;
+    h5{
+        color: #accfde;
+        font-weight: lighter;
+    }
+    .text{
+        border-top: solid #f0f0f0 1px ;
+        margin-top: 10px;
+    }
+    .nuevo{
+        border-collapse: collapse;
+    }
+    
+}
+.topic-list{
+    @include separador;
+    margin: 0 10px 0 10px;
+    
+    .header{
+        background-color: #e3eff4;
+        border-top: solid #78b9cf 2px;
     }
 }
 
