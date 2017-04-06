@@ -137,6 +137,12 @@ div[class*="-theme"] {
 //----------------header section//
 $color-navigation: #235e85; 
 $white: white;
+$name-profile: #6ca5ba;
+$lighting: #f1a13a;
+$copy-paper: #1b9184;
+$floor-maths: #358ba8;
+$classroom: #c85431;
+$learn: #7998a7;
 .toolbar-background-md {
     border-color: rgb(178, 178, 178);
     background: $color-navigation;
@@ -151,7 +157,7 @@ $white: white;
         display: inline;
         padding-left: 5%;
         img{
-            width: 5.5%;
+            width: 6%;
             max-width: 100%;
         }
     }
@@ -162,24 +168,150 @@ $white: white;
     font-weight: 500;
     color: $white;
     }
-.icon .icon-md .ion-md-menu{
+.icon{
     color: $white;
 }
-
+.logo{
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.img-profile{
+    border-radius: 10%;
+    width: 30%;
+}
+//---------------profile--------------
+.profile{
+   background-color: $white;
+    .img-profile{
+    background-image: url(../../images/dashboard/img_profile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+    border: 2px solid grey;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: -5px
+    }
+    .name{
+    text-align: right;
+    }
+    .name{
+        span{
+            display: inline-block; 
+            margin-right: 10px;
+            margin-top: 10px;
+            color: $name-profile;
+        }
+    }
+}
 @media(min-width: 320px) and (max-width: 768px){
     .iconsDash li img{
         width: 15%;
         margin-top: 6%;
     }
+    .profile{
+        .img-profile{
+            height: 30px;
+            width: 30px;
+        }
+        .logo{
+            width: 100%;
+        }
+   
+    .name span{
+        margin-top: 1%;
+    }
+     }
 }
+//---------------end profile------------------------
 @media(min-width: 768px) and (max-width: 1024px){
     .iconsDash li img{
         width: 8%;
         margin-top: 3%;
     }
+    .logo{
+        margin-top: 10%;
+    }
+    .profile{
+        .logo{
+            width: 60%;
+            
+        }
+    }
+
 }
-
-
+//--------------
+.money-ligth{
+    button{
+        background-color: $lighting;
+        .ion-icon{
+            color: $lighting;
+        }
+        img{
+                height: 72px;
+                margin-top: 3px;
+        }
+    }
+}
+.money-floor{
+    button{
+        background-color: $floor-maths;
+        .ion-icon{
+            color: $floor-maths;
+        }
+        img{
+                height: 75px;
+                margin-top: 3px;
+        }
+    }
+}
+.money-copy{
+    button{
+        background-color: $copy-paper;
+        .ion-icon{
+            color: $copy-paper;
+        }
+        img{
+                height: 60px;
+                margin-top: 3px;
+        }
+    }
+}
+.money-classroom{
+    button{
+        background-color: $classroom;
+        .ion-icon{
+            color: $classroom;
+        }
+        img{
+                height: 60px;
+                margin-top: 3px;
+        }
+    }
+}
+.learn{
+    button{
+        background-color: $learn;
+        .ion-icon{
+            color: $learn;
+        }
+        img{
+                height: 60px;
+                margin-top: 3px;
+        }
+    }
+}
+.name-money{
+    margin-left: 12%;
+}
+.box-money{
+    padding: 9%;
+    background-color: $white;
+}
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
