@@ -239,6 +239,7 @@ $white: white;
 /*------ Review ------*/
 .review{
     $colorPrincipal: #60a2bd;
+    $colorSecundario: #bbbbbb;
     
     .columna{
         padding: 10px 20px;
@@ -256,7 +257,15 @@ $white: white;
         background: $colorPrincipal;
     }
     .datos p{
-        color: #bbbbbb;
+        color: $colorSecundario; 
+        margin-bottom: 0;
+    }
+/*--------------------------- nuevo -------------------------*/
+    .right p{
+        text-align: right;
+    }
+    .hr{
+        background: $colorSecundario; 
     }
 }
 
