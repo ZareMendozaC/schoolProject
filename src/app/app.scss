@@ -256,6 +256,7 @@ $white: white;
     }
     h2{
         color: #005e8a;
+        margin-bottom: 15px;
     }
     p{
         font-size: 18px;
@@ -307,7 +308,87 @@ $white: white;
         top: 16px;
     }
 }
-
+// shopping
+.ShoppingCon{
+    .pantalla{
+        width: 160px;
+        margin: 0 auto;
+        padding: 70px 0px 18px 0px;
+    }
+    .card-imgs{
+        background-color: #009384;
+        width: 74px;
+        padding: 15px 0px 15px 4px;
+        color: white;
+        float: right;
+        font-size: 21px;
+    }
+    .buton{
+        background-color: #0069ba;
+    }
+    h2{
+        color: #005e8a;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 18px;
+    }
+    
+    .card-md1 {
+    margin: 10px 10px 0px 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    background: #f9f9f9;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+   }
+    //estrellas
+    #form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+   }
+   #form p {
+   text-align: center;
+   }
+   #form label {
+   font-size: 20px;
+   }
+   input[type="radio"] {
+   display: none;
+   }
+   label {
+   color: grey;
+   }
+  .clasificacion {
+   direction: rtl;
+   unicode-bidi: bidi-override;
+   }
+   label:hover,
+   label:hover ~ label {
+   color: orange;
+   }
+    .letra{
+        font-size: 13px;
+        position: relative;
+        top: 9px;
+        left: 30px;
+    }
+    .letra1{
+        position: relative;
+        top: -15px;
+        left: 66px;
+    }
+    select{
+        padding: 2px 17px 0px 2px;
+        font-size: 24px;
+    }
+    .ico{
+        position: absolute;
+        top: 10px;
+        left: 36px;
+    }
+}
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
