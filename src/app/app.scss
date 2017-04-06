@@ -246,7 +246,7 @@ $white: white;
     }
     h5{
        color: $colorPrincipal;
-        display: inline-block;
+       display: inline-block;
     }
     img{
         width: 25px;
@@ -325,6 +325,46 @@ $white: white;
 }
 
 /*------ End Checkout ------*/
+/*---------------- END CINTHIA MASHIEL ----------------*/
+
+
+
+/*---------------- CINTHIA MASHIEL ----------------*/
+/*------ Edit-One ------*/
+.edit-one{
+     padding: 0;
+    $colorPrincipal: #60a2bd;
+    $colorSecundario: #c6e2f4;
+
+    h5{
+       color: $colorPrincipal;
+        display: inline-block;
+    }
+    img{
+        width: 20px;
+    }
+    .arrow{
+        height: 8px;
+    }
+    .img{
+        float: right;
+        padding: 0.5%;
+        border: 2px solid $colorSecundario;
+        border-radius: 9px;
+        color: $colorPrincipal;
+    
+    }
+    .columna{
+        padding: 10px 20px;
+    }
+    @media screen and (max-width: 992px){
+        .columna{
+            padding: 5px 0;
+        }
+    }
+    
+}
+/*------ End Edit-Oner ------*/
 /*---------------- END CINTHIA MASHIEL ----------------*/
 
 
