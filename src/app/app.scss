@@ -234,6 +234,37 @@ $white: white;
 
 
 
+
+/*---------------- CINTHIA MASHIEL ----------------*/
+/*------ Review ------*/
+.review{
+    $colorPrincipal: #60a2bd;
+    
+    .columna{
+        padding: 10px 20px;
+    }
+    h5{
+       color: $colorPrincipal;
+        display: inline-block;
+    }
+    img{
+        width: 25px;
+        background: $colorPrincipal;
+        float: right;
+    }
+    hr{
+        background: $colorPrincipal;
+    }
+    .datos p{
+        color: #bbbbbb;
+    }
+}
+
+/*------ End Review ------*/
+/*---------------- END CINTHIA MASHIEL ----------------*/
+
+
+
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
