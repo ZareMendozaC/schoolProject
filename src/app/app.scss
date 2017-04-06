@@ -182,6 +182,88 @@ $white: white;
 
 // App Global Sass
 // --------------------------------------------------
+/**{outline: solid red 1px;}*/
+
+/*------------------------CALENDAR*/
+.content-ios{
+    .number{
+        font-size: 120px;
+        color: #8eaab7;
+        padding: 0;
+        font-weight:lighter;
+    }
+    .card-title{  
+        padding: 0;
+        margin-top: 55px;
+        h1{
+            color: #9db4c0;
+            letter-spacing: 2px;
+            margin-bottom: 5%;
+        }
+        img{
+            width: 18%;
+            padding-right: 5%;
+        }
+        small{
+            position: relative;
+            top: -30px;
+            left: 20%;
+            color: #9db4c0;
+            padding: 0;
+        }
+        .bg-blue-tile{
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .verticalLine{
+        border-left: thin solid #dfe7e9;
+        height: 65px;
+        margin-top: 18%;
+        margin-right: 10px;
+    
+    }
+}
+
+.box-orange{
+    background-color: #f1a13a;
+    
+    h4{
+        color: #fff;
+        padding-top: 2%;
+        margin-right: 25;
+    }   
+    .log-in{
+        img{
+            width: 25%;
+            position: absolute;
+            right: 0;
+            
+        }
+        
+    }
+    
+}
+@media screen and (max-width: 768px){
+        .content-ios{
+            .verticalLine{
+                display: none;
+            }
+            .card-title{
+                margin: 0;
+            }
+            .box-orange{
+                img{
+                    margin-right: 65%;
+                    font-size: 10%;
+                }
+            }
+        }
+    }
+
+
+
+
 // Put style rules here that you want to apply globally. These
 // styles are for the entire app and not just one component.
 // Additionally, this file can be also used as an entry point
