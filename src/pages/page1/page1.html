@@ -61,8 +61,8 @@
     </ion-grid>
 </div>
 </ion-header>
-
-<ion-content padding class="content-ios outer-content">
+<!-- QUITAR LA PARTE DE hidden-hide-when -->
+<ion-content padding class="content-ios outer-content hidden-hide-when">
     <ion-grid>
         <ion-row responsive-sm>
             <ion-col class="col" width-34>
@@ -86,39 +86,56 @@
                         </ion-grid>
                     </ion-card-content>
                 </ion-card>
-                                <ion-card>
-                    <ion-card-content class="bg-yellow-tile">
-                        <ion-card-title>
-                            Nine Inch Nails Live
-                        </ion-card-title>
-                        <p>
-                        The most popular industrial group ever, and largely
-                        responsible for bringing the music to a mass audience.
-                        </p>
-                    </ion-card-content>
-                </ion-card>
-                <ion-card>
-                    <ion-card-content class="bg-green-tile">
-                        <ion-card-title>
-                            Nine Inch Nails Live
-                        </ion-card-title>
-                        <p>
-                        The most popular industrial group ever, and largely
-                        responsible for bringing the music to a mass audience.
-                        </p>
-                    </ion-card-content>
-                </ion-card>
-                <ion-card>
-                    <ion-card-content class="bg-red-tile">
-                        <ion-card-title>
-                            Nine Inch Nails Live
-                        </ion-card-title>
-                        <p>
-                        The most popular industrial group ever, and largely
-                        responsible for bringing the music to a mass audience.
-                        </p>
-                    </ion-card-content>
-                </ion-card>
+            <ion-grid>
+                    <ion-row>
+                        <ion-col class="col link" text-center>
+                            <ion-card>
+                                <button ion-button icon-left class="button-tile disable-hover">
+                                    <div class="box-links">
+                                      <img src="images/dashboard/tiles icons/info.png">
+                                  </div>
+                                   <span class="name-money">STYM</span>
+                                </button>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col class="col link" text-center>
+                            <ion-card>
+                                <button ion-button icon-left class="button-tile disable-hover">
+                                    <div class="box-links">
+                                      <img src="images/dashboard/tiles icons/link.png">
+                                  </div>
+                                   <span class="name-money">BUDGETING</span>
+                                </button>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row>
+                     <ion-row>
+                        <ion-col class="col link" text-center>
+                            <ion-card>
+                                <button ion-button icon-left class="button-tile disable-hover">
+                                    <div class="box-links">
+                                      <img src="images/dashboard/tiles icons/contract.png">
+                                  </div>
+                                   <span class="name-money">BUDGETING</span>
+                                </button>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row>
+                     <ion-row>
+                        <ion-col class="col link" text-center>
+                            <ion-card>
+                                <button ion-button icon-left class="button-tile disable-hover">
+                                    <div class="box-links">
+                                      <img src="images/dashboard/tiles icons/mail1.png">
+                                  </div>
+                                   <span class="name-money">BUDGETING</span>
+                                </button>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row>
+                 </ion-grid>              
             </ion-col>
             <ion-col class="col" width-66>
                 <h3>STORES</h3><hr>
@@ -206,7 +223,7 @@
                                     <div class="box-money">
                                       <img src="images/dashboard/tiles icons/copy.png">
                                   </div>
-                                   <span class="name-money">FLOOR MATHS</span>
+                                   <span class="name-money">COPY PAPER</span>
                                 </button>
                             </ion-card>
                         </ion-col>
@@ -216,7 +233,7 @@
                                     <div class="box-money">
                                       <img src="images/dashboard/tiles icons/computer.png">
                                   </div>
-                                   <span class="name-money">FLOOR MATHS</span>
+                                   <span class="name-money">CLASSROOM MONITORS</span>
                                 </button>
                             </ion-card>
                         </ion-col>
@@ -251,26 +268,453 @@
         </ion-row>
     </ion-grid>
 </ion-content>
-<ion-content padding class="content-ios outer-content hidden-hide-when">
-    <ion-grid>
+<ion-content padding class="content-ios review hidden-hide-when">
+      <ion-grid>
         <ion-row responsive-sm>
-            <ion-col class="col" width-50>
-                <ion-item>
-                  <ion-icon name="ios-arrow-dropdown" item-left></ion-icon>
-                  General Information
-                </ion-item>  
-                <ion-item class="lessBorder"><div class="item-inner lessBorder">
-                    <ion-icon name="medical" item-left></ion-icon>
-                    
-                    </div></ion-item>
+            <ion-col class="col columna" width-50>
+                 <h5>General Information</h5>
+                 <img src="../images/login/pen.png" alt="">
+                 <hr>
+                 <ion-row>
+                    <ion-col class="col" width-34>
+                        <p>Requuest Date</p>
+                        <p>Fiscal Year</p>
+                        <p>Buyer Name</p>
+                        <p>Currency</p>
+                        <p>Time Zone</p>
+                        <p>Project Budget Code</p>
+                        <p>Description</p>
+                    </ion-col>
+                    <ion-col class="col datos" width-50>
+                        <p>07/03/2017</p>
+                        <p>2017</p>
+                        <p>Torm Collins</p>
+                        <p>USD</p>
+                        <P>COT</P>
+                        <p>233455345</p>
+                        <p>CHROME (SIDE BY SIDE) TOILET PAPER DISPENSER (2 EACH MIN.)</p>
+                    </ion-col>
+               </ion-row> 
             </ion-col>
-            <ion-col class="col" width-50>
-                <ion-item>
-                  <ion-icon name="ios-arrow-dropdown" item-left></ion-icon>
-                  Shipping Information
-                </ion-item>      
+            
+            <ion-col class="col columna" width-50>
+               <h5>Shipping Information</h5> 
+               <img src="../images/login/pen.png" alt="">
+               <hr> 
+               <ion-row>
+                    <ion-col class="col columna" width-100>
+                        <p>PURIDIOM CALIF</p>
+                        <div class="datos">
+                            <p>Puridiom <br> 1548 Via Campo Aureo <br> default address <br> San Jose CA 95120 <br>US</p>
+                        </div>
+                        <p>Priority</p>
+                        <div class="datos">
+                            <p>NORMAL</p>
+                        </div>
+                        <p>Delivered to</p>
+                        <div class="datos">
+                            <p>SECOND FLOOR, SUIT 203</p>
+                        </div>
+                    </ion-col>
+               </ion-row>     
+            </ion-col>
+        </ion-row>
+        
+        <ion-row responsive-sm>
+            <ion-col class="col columna" width-50>
+                 <h5>Supplier Information</h5>
+                 <img src="../images/login/pen.png" alt="">
+                 <hr>
+                 <ion-row>
+                    <ion-col class="col columna" width-100>
+                        <p>NATIONALCLEAN</p>
+                        <div class="datos">
+                            <p>NATIONAL CLEANING INC. <br> default address <br> US <br> Attn: Sandra Cooke <br> Phone: 954-956-2345</p>
+                        </div>
+                    </ion-col>
+               </ion-row> 
+            </ion-col>
+            
+            <ion-col class="col columna" width-50>
+               <h5>Shipping Information</h5> 
+               <img src="../images/login/pen.png" alt="">
+               <hr> 
+               <ion-row>
+                    <ion-col class="col columna" width-100>
+                        <p>MAIN</p>
+                        <div class="datos">
+                            <p>Technical Service Associates Inc. <br> 2 Kacey Court <br> default address <br> Mechanicsburg PA 17055 <br> Attn: Accounts Payable <br> Tax Code: PA</p>
+                        </div>
+                    </ion-col>
+               </ion-row>     
             </ion-col>
         </ion-row>
     </ion-grid>
+ <ion-grid class="tableInformation columna">
+    <h5>Item Information  <img class="check" src="../images/login/pen.png" alt=""></h5>
+    <ion-row class="header-table">
+        <ion-col class="col" col-1>
+        </ion-col>
+        <ion-col class="col" width-12>
+            <strong>ITEM CODE</strong>
+        </ion-col>
+        <ion-col class="col" width-12>
+            <strong>CATALOG</strong>
+        </ion-col>
+        <ion-col class="col" width-12> 
+            <strong>CATEGORY</strong>
+        </ion-col>
+        <ion-col class="col" width-18>
+            <strong>QUANTITY@PRICE</strong>
+        </ion-col>
+        <ion-col class="col" width-12>
+            <strong>EXTENDEND COST</strong>
+        </ion-col>
+        <ion-col class="col" width-12>
+            <strong>LINE STATUS</strong>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col text-center class="col" col-1>
+        1
+        </ion-col>
+        <ion-col class="col" width-12>
+        SC01950
+        </ion-col>
+        <ion-col class="col" width-12> 
+        NATIONALCLEAN
+        </ion-col>
+        <ion-col class="col" width-12>
+        48500
+        </ion-col>
+        <ion-col class="col" width-18>
+        1.00 @ 42.50 USD Each
+        </ion-col>
+        <ion-col class="col" width-12>
+        42.50 SD
+        </ion-col>
+        <ion-col class="col" width-12>
+        Incomplete
+        </ion-col>
+    </ion-row>
+    <ion-row class="comentario">
+        <ion-col class="col" col-1>
+        </ion-col>
+        <ion-col class="col" col-10>
+            Scott fold Paper Hand Towels(20 packs per box)<br>
+            <strong>Acount</strong><br>
+            3000-A65009 42.50 USD<br>
+            <strong>Description</strong><br>
+            SVP GOVT & CONOPS-JANITORIAL SERVICES-SUPPLIES
+        </ion-col>
+    </ion-row>
+    <hr class="divisionTable">
+    <ion-row>
+        <ion-col text-center class="col" col-1>
+        2
+        </ion-col>
+        <ion-col class="col" width-12>
+        SC01950
+        </ion-col>
+        <ion-col class="col" width-12> 
+        NATIONALCLEAN
+        </ion-col>
+        <ion-col class="col" width-12>
+        48500
+        </ion-col>
+        <ion-col class="col" width-18>
+        1.00 @ 42.50 USD Each
+        </ion-col>
+        <ion-col class="col" width-12>
+        42.50 SD
+        </ion-col>
+        <ion-col class="col" width-12>
+        Incomplete
+        </ion-col>
+    </ion-row>
+    <ion-row class="comentario">
+        <ion-col class="col" col-1>
+        </ion-col>
+        <ion-col class="col" col-10>
+            Scott fold Paper Hand Towels(20 packs per box)<br>
+            <strong>Acount</strong><br>
+            3000-A65009 42.50 USD<br>
+            <strong>Description</strong><br>
+            SVP GOVT & CONOPS-JANITORIAL SERVICES-SUPPLIES
+        </ion-col>
+    </ion-row>
+ </ion-grid>
+<ion-grid>
+ <!---------------------------------------- nuevo -------------------------->
+        <ion-row responsive-sm>
+            <ion-col class="col columna" width-50>
+                 <h5>Accounts</h5>
+                 <img src="../images/login/pen.png" alt="">
+                 <hr>
+                 <ion-row>
+                    <ion-col class="col" width-100>
+                        <div class="datos">
+                            <p>3000A-65009 <span style="float:right">42.50 USD</span></p>
+                            <p style="display:inline-block; color:black">Description</p> 
+                            <p style="display:inline-block">SVP GOVT & CONOPS-JANITORIAL SERVICES-SUPPLIES</p>
+                            <p><br></p>
+                            <p>3000A-11111 <span style="float:right">15.11 USD</span></p>
+                            <p style="display:inline-block; color:black">Description</p> 
+                            <p style="display:inline-block">SVP GOVT & CONOPS-VSE OTHER TASK</p>
+                        </div>
+                        <hr class="hr">
+                        <span style="float:right">57.61 USD</span>
+                    </ion-col>
+               </ion-row> 
+            </ion-col>
+            
+            <ion-col class="col columna" width-50>
+               <h5>Totals</h5> 
+               <img src="../images/login/pen.png" alt="">
+               <hr> 
+               <ion-row>
+                    <ion-col class="col datos" width-50>
+                        <p>Subtotal: <br> Discount: <br> Tax: <br> Shipping: <br> Shipping Tax: <br> Other: <br> Other Tax:</p>
+                    </ion-col>
+                    <ion-col class="col" width-50>
+                        <div class="datos right">
+                            <p>57.61 USD <br> 0.00 USD <br> 0.00 USD <br> 0.00 USD <br> 0.00 USD <br> 0.00 USD <br> 0.00 USD <br></p>
+                        </div>   
+                    </ion-col>
+               </ion-row>
+               <hr class="hr">
+               <p style="display:inline">TOTAL <span style="float:right">57.61 USD</span></p>     
+            </ion-col>
+        </ion-row>
+</ion-grid>
 </ion-content>
+
+<!--LOGIN-->
+
+<ion-content padding class="content-ios section-login ">
+    <ion-grid> 
+        <div class="register">
+            <ion-card>
+                <ion-card-content>
+                    <div class="fondo">
+                        <img src="../images/login/pen.png"/>
+                    </div>
+                    <h1 class="titulo">
+                    <b>Register</b>
+                    </h1>
+                    <ion-list>
+                        <ion-item>
+                            <ion-input type="text" placeholder="Name and Last Name"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input type="text" placeholder="User Name"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input type="text" placeholder="Email"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input type="password" placeholder="Password"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input type="password" placeholder="Confirm Password"></ion-input>
+                        </ion-item>
+                    </ion-list> <br>
+                    <button ion-button>REGISTER</button>
+                </ion-card-content>
+            </ion-card>
+        </div>
+    </ion-grid>
+</ion-content>
+<!-- login user-->
+<ion-content padding class="content-ios section-login hidden-hide-when">
+    <ion-grid> 
+        <div class="register">
+            <ion-card>
+                <ion-card-content>
+                    <div class="fondo">
+                        <img src="../images/login/user.png"/>
+                    </div>
+                    <h1 class="titulo">
+                    <b>Wellcome</b>
+                    </h1>
+                    <ion-list>
+                        <ion-item>
+                            <ion-input type="text" placeholder="User Name"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input type="password" placeholder="Password"></ion-input>
+                        </ion-item>
+                    </ion-list> <br>
+                    <ion-row responsive-sm class="enLinea">
+                        <ion-col class="col" width-50>
+                        <div>
+                            <ion-checkbox></ion-checkbox>
+                            <span>Remenber me</span>
+                        </div>
+                        </ion-col>
+                        <ion-col class="col" width-50>
+                        <div>
+                            <ion-icon name="ios-mail-outline"></ion-icon>
+                            <span>Forgot Password?</span>
+                        </div>
+                        </ion-col>
+                    </ion-row>
+                    <button ion-button>LOGIN</button>
+                </ion-card-content>
+            </ion-card>
+        </div>
+    </ion-grid>
+</ion-content>
+<ion-content class="shopping content-ios outer-content hidden-hide-when">
+    <ion-grid>
+    <ion-row responsive-sm>
+        <ion-col class="col" col-27>
+         <ion-card class="fondo-shop">
+                <img src="images/computadora.png"/>
+                <div class="box"><span class="price">$ 1.00</span></div>
+                <ion-card-content>
+                <strong><p class="blue">
+                    #1012<br>
+                    Provided by NATIONAL CLEANING INC
+                </p></strong>
+                <p>
+                    41/2 OZ Sweetheart/ Fonda Rolle Rim Co<br><br>
+                    Get it by today
+                </p>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <br>
+                <button ion-button> <ion-icon style="color: white; padding-right: 10px" name="ios-basket-outline"></ion-icon> Add to cart</button>
+                </ion-card-content>
+
+            </ion-card>
+        </ion-col>
+         <ion-col class="col" col-27>
+         <ion-card class="fondo-shop">
+                <img src="images/computadora.png"/>
+                <div class="box"><span class="price">$ 1.00</span></div>
+                <ion-card-content>
+                <strong><p class="blue">
+                    #1012<br>
+                    Provided by NATIONAL CLEANING INC
+                </p></strong>
+                <p>
+                    41/2 OZ Sweetheart/ Fonda Rolle Rim Co<br><br>
+                    Get it by today
+                </p>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <br>
+                <button ion-button> <ion-icon style="color: white; padding-right: 10px" name="ios-basket-outline"></ion-icon> Add to cart</button>
+                </ion-card-content>
+
+            </ion-card>
+        </ion-col>
+         <ion-col class="col" col-27>
+         <ion-card class="fondo-shop">
+                <img src="images/computadora.png"/>
+                <div class="box"><span class="price">$ 1.00</span></div>
+                <ion-card-content>
+                <strong><p class="blue">
+                    #1012<br>
+                    Provided by NATIONAL CLEANING INC
+                </p></strong>
+                <p>
+                    41/2 OZ Sweetheart/ Fonda Rolle Rim Co<br><br>
+                    Get it by today
+                </p>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <br>
+                <button ion-button> <ion-icon style="color: white; padding-right: 10px" name="ios-basket-outline"></ion-icon> Add to cart</button>
+                </ion-card-content>
+
+            </ion-card>
+        </ion-col>
+    </ion-row>
+      <ion-row responsive-sm>
+        <ion-col class="col" col-27>
+         <ion-card class="fondo-shop">
+                <img src="images/computadora.png"/>
+                <div class="box"><span class="price">$ 1.00</span></div>
+                <ion-card-content>
+                <strong><p class="blue">
+                    #1012<br>
+                    Provided by NATIONAL CLEANING INC
+                </p></strong>
+                <p>
+                    41/2 OZ Sweetheart/ Fonda Rolle Rim Co<br><br>
+                    Get it by today
+                </p>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <br>
+                <button ion-button> <ion-icon style="color: white; padding-right: 10px" name="ios-basket-outline"></ion-icon> Add to cart</button>
+                </ion-card-content>
+
+            </ion-card>
+        </ion-col>
+         <ion-col class="col" col-27>
+         <ion-card class="fondo-shop">
+                <img src="images/computadora.png"/>
+                <div class="box"><span class="price">$ 1.00</span></div>
+                <ion-card-content>
+                <strong><p class="blue">
+                    #1012<br>
+                    Provided by NATIONAL CLEANING INC
+                </p></strong>
+                <p>
+                    41/2 OZ Sweetheart/ Fonda Rolle Rim Co<br><br>
+                    Get it by today
+                </p>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <br>
+                <button ion-button> <ion-icon style="color: white; padding-right: 10px" name="ios-basket-outline"></ion-icon> Add to cart</button>
+                </ion-card-content>
+
+            </ion-card>
+        </ion-col>
+         <ion-col class="col" col-27>
+         <ion-card class="fondo-shop">
+                <img src="images/computadora.png"/>
+                <div class="box"><span class="price">$ 1.00</span></div>
+                <ion-card-content>
+                <strong><p class="blue">
+                    #1012<br>
+                    Provided by NATIONAL CLEANING INC
+                </p></strong>
+                <p>
+                    41/2 OZ Sweetheart/ Fonda Rolle Rim Co<br><br>
+                    Get it by today
+                </p>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <br>
+                <button ion-button> <ion-icon style="color: white; padding-right: 10px" name="ios-basket-outline"></ion-icon> Add to cart</button>
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    </ion-grid>
+</ion-content>
+
 </div>
