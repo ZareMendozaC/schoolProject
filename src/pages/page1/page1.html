@@ -25,7 +25,7 @@
         <div text-center class="login-text"><span>Don't have an account yet?</span><span class="link">Sign Up</span></div>
     </div>
 </div>
-<ion-header class="navigationHeader">
+<ion-header class="navigationHeader login hidden-hide-when">
   <ion-navbar>
     <ion-grid>
         <ion-row>
@@ -49,7 +49,7 @@
       </ion-grid>
   </ion-navbar>
 </ion-header>
-<ion-content padding class="content-ios outer-content">
+<ion-content padding class="content-ios outer-content login hidden-hide-when">
     <ion-grid>
         <ion-row responsive-sm>
             <ion-col class="col" width-34>
@@ -227,4 +227,48 @@
         </ion-row>
     </ion-grid>
 </ion-content>
+
+<!----------- LOGIN --------->
+<ion-content padding class="content-ios section-login">
+    <ion-grid>
+               <!--- Cinthia ---> 
+                <div class="register">
+                    <ion-card>
+                        <ion-card-content>
+                            <div class="fondo">
+                                <img src="../images/login/pen.png"/>
+                            </div>
+                            <h1 class="titulo">
+                            <b>Register</b>
+                            </h1>
+                            <ion-list>
+                                <ion-item>
+                                    <ion-input type="text" placeholder="Name and Last Name"></ion-input>
+                                </ion-item>
+
+                                <ion-item>
+                                    <ion-input type="text" placeholder="User Name"></ion-input>
+                                </ion-item>
+
+                                <ion-item>
+                                    <ion-input type="text" placeholder="Email"></ion-input>
+                                </ion-item>
+
+                                <ion-item>
+                                    <ion-input type="password" placeholder="Password"></ion-input>
+                                </ion-item>
+
+                                <ion-item>
+                                    <ion-input type="password" placeholder="Confirm Password"></ion-input>
+                                </ion-item>
+                            </ion-list> <br>
+                            <button ion-button>REGISTER</button>
+                        </ion-card-content>
+                    </ion-card>
+                </div>
+               <!--- End Cinthia --->
+    </ion-grid>
+</ion-content>
+
+<!--- End Login --->
 </div>

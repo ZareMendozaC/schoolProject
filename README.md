@@ -1,1 +1,1 @@
-# schoolProject
+# schools-git

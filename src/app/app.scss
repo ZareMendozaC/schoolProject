@@ -179,6 +179,58 @@ $white: white;
     }
 }
 
+/*------ Login ------*/
+/*--- Cinthia ---*/
+.section-login{
+    $colorPrincipal: #5cacdf;
+    $colorSecundario:  #5e8ac6; 
+    
+    background: #efeff4;
+    
+    .register{
+        text-align: center;
+        margin: 5% auto 0;
+        width: 30%;
+    }
+    @media screen and (max-width:768px){
+        .register{
+            width: 100%;
+        }
+    }
+    .titulo{
+        color: $colorSecundario;
+    }
+    ion-card{
+        overflow: visible;
+    }
+    .fondo{
+        background: $colorPrincipal;
+        border-radius: 100%;
+        width: 90px;
+        padding: 25px;
+        display: inline-block;
+        position: relative;
+        top: -50px;
+        .img{
+            width: 60px;
+            margin: auto;
+        }
+    }
+    .text-input-md{
+        text-align: center;
+    }
+    ion-input{
+        border: 1px solid $colorSecundario;
+        border-radius: 4px;
+        margin-top: 10px;
+        ::-webkit-input-placeholder { color: $colorPrincipal; } /* WebKit */
+        :-moz-placeholder { color: $colorPrincipal; } /* Firefox 18- */
+        ::-moz-placeholder { color: $colorPrincipal; } /* Firefox 19+ */
+        :-ms-input-placeholder { color: $colorPrincipal; } /* IE 10+ */
+    }
+}
+
+/*------ End Login ------*/
 
 // App Global Sass
 // --------------------------------------------------
